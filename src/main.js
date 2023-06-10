@@ -1,5 +1,6 @@
-import { readFileSync } from 'fs';
+import { writeFileSync} from 'fs';
 
-let filePath = 'D:/PG-DAC-MAR23/WPT/WPT SANTOSH MONDAL/day10 practice/package.json';
-let fileData = readFileSync(filePath, {encoding : "utf-8"});
-console.log(fileData);
+let filePath = "D:/PG-DAC-MAR23/WPT/WPT SANTOSH MONDAL/day10 practice/output.txt";
+let data = "good night";
+writeFileSync(filePath, data);
+console.log("write success!");
