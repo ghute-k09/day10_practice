@@ -1,15 +1,10 @@
-// function sum(n1 , n2){
-//     return n1 + n2;
-// }
+import {readFile} from "node:fs/promises";
 
-// let output = sum(10 , 20);
-// console.log(output);
+async function main(){
+    let filepath = 'D:/PG-DAC-MAR23/WPT/WPT SANTOSH MONDAL/day10 practice/package.json';
+    let filedata = await readFile(filepath , {encoding : "utf-8"});
+    console.log(filedata);
 
-async function sum(n1 , n2){
-    return n1 + n2;
 }
- async function main(){
-  let output =  await sum(10 ,15);
-  console.log(output);
-}
+
 main();
